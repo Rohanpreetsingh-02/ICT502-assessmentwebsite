@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>WellSpring Family Clinic — Care that Flows</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="WellSpring Family Clinic — friendly, community-focused healthcare. Services, BMI calculator, appointment requests and contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="WellSpring Family Clinic Home">
+        <span class="logo-icon" aria-hidden="true">💧</span>
+        <span class="logo-text">WellSpring <small>Family Clinic</small></span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" data-nav="home">Home</a></li>
+          <li><a href="services.html" data-nav="services">Services</a></li>
+          <li><a href="bmi.html" data-nav="bmi">BMI Calculator</a></li>
+          <li><a href="appointment.html" data-nav="appointment">Appointment</a></li>
+          <li><a href="about.html" data-nav="about">About Us</a></li>
+          <li><a href="contact.html" data-nav="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero gradient-bg reveal">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Care that flows through your family’s life</h1>
+          <p>From routine checkups to family care, our team provides accessible, friendly healthcare close to home.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="appointment.html">Book an Appointment</a>
+            <a class="btn btn-outline" href="services.html">Explore Services</a>
+          </div>
+          <div class="hours-card">
+            <h3>Clinic Hours</h3>
+            <ul class="plain">
+              <li><strong>Mon–Fri:</strong> 8:00 – 18:00</li>
+              <li><strong>Sat:</strong> 9:00 – 14:00</li>
+              <li><strong>Sun:</strong> Closed</li>
+            </ul>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?q=80&w=1200&auto=format&fit=crop" alt="Friendly doctor with patient" />
+        </div>
+      </div>
+      <div class="floating-badges">
+        <span>Bulk Billing</span><span>Family Care</span><span>Community First</span>
+      </div>
+    </section>
+
+    <section class="container features reveal">
+      <h2 class="section-title">Featured Services</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>General Practice</h3>
+          <p>Comprehensive primary care for all ages—routine checks, prescriptions, and ongoing support.</p>
+          <a href="services.html#gp" class="link-arrow">Learn more</a>
+        </article>
+        <article class="card">
+          <h3>Immunisations</h3>
+          <p>Up-to-date vaccinations for children and adults, guided by national guidelines.</p>
+          <a href="services.html#imm" class="link-arrow">Learn more</a>
+        </article>
+        <article class="card">
+          <h3>Family Health</h3>
+          <p>Family planning, maternal health, and wellness screenings tailored to your needs.</p>
+          <a href="services.html#fam" class="link-arrow">Learn more</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta-ribbon reveal">
+      <div class="container cta-inner">
+        <h2>Know your BMI in seconds</h2>
+        <p>Use our quick BMI calculator to understand your healthy weight range.</p>
+        <a class="btn btn-light" href="bmi.html">Calculate BMI</a>
+      </div>
+    </section>
+
+    <section class="container testimonials reveal">
+      <h2 class="section-title">What patients say</h2>
+      <div class="testimonial-grid">
+        <blockquote>“Warm people and efficient service. Booking was effortless!”<cite>— Priya K.</cite></blockquote>
+        <blockquote>“Clean clinic, attentive doctors, and great follow-up.”<cite>— Marco T.</cite></blockquote>
+        <blockquote>“They listened carefully and explained everything clearly.”<cite>— Aisha R.</cite></blockquote>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>WellSpring Family Clinic</h4>
+        <p>Community-first healthcare with compassionate clinicians.</p>
+        <p class="small">© <span id="year"></span> WellSpring Family Clinic. All rights reserved.</p>
+      </div>
+      <div>
+        <h5>Hours</h5>
+        <ul class="plain">
+          <li>Mon–Fri: 8:00 – 18:00</li><li>Sat: 9:00 – 14:00</li><li>Sun/Public Holidays: Closed</li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul class="plain">
+          <li>Phone: <a href="tel:+61123456789">+61 123 456 789</a></li>
+          <li>Email: <a href="mailto:hello@wellspringclinic.example">hello@wellspringclinic.example</a></li>
+          <li>Address: 123 Meadow Rd, Greenfield</li>
+        </ul>
+        <div class="social">
+          <a href="#" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M13.5 9H16V6h-2.5C11.6 6 10 7.6 10 9.5V11H8v3h2v7h3v-7h2.1l.9-3H13v-1.5c0-.3.2-.5.5-.5Z"/></svg></a>
+          <a href="#" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.51 5.51 0 0 1 12 7.5Zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5ZM18 6.2a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z"/></svg></a>
+          <a href="#" aria-label="Twitter" title="Twitter / X"><svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M20 3 9.5 14.5M20 3l-7.5 18-2.7-7.1L3 11z" fill="none" stroke="currentColor" stroke-width="2"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

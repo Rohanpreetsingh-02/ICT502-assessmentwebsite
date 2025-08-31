@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Appointment Request — WellSpring Family Clinic</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Flatpickr calendar -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+  <!-- Scripts -->
+  <script defer src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body data-page="appointment">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><span class="logo-icon">💧</span><span class="logo-text">WellSpring <small>Family Clinic</small></span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" data-nav="home">Home</a></li>
+          <li><a href="services.html" data-nav="services">Services</a></li>
+          <li><a href="bmi.html" data-nav="bmi">BMI Calculator</a></li>
+          <li><a href="appointment.html" data-nav="appointment">Appointment</a></li>
+          <li><a href="about.html" data-nav="about">About Us</a></li>
+          <li><a href="contact.html" data-nav="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero reveal">
+      <div class="container">
+        <h1>Request an Appointment</h1>
+        <p>Fill in the form and we’ll confirm your appointment via email or phone.</p>
+      </div>
+    </section>
+
+    <section class="container reveal">
+      <div class="form-card">
+        <form id="appointment-form" novalidate>
+          <div class="grid-2">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required placeholder="Your full name" />
+              <small class="error" id="nameErr"></small>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="you@example.com" />
+              <small class="error" id="emailErr"></small>
+            </div>
+          </div>
+          <div class="grid-2">
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" required placeholder="+61 4xx xxx xxx" />
+              <small class="error" id="phoneErr"></small>
+            </div>
+            <div class="form-group">
+              <label for="date">Preferred Date</label>
+              <div class="date-wrap">
+                <input type="text" id="date" name="date" required placeholder="Select a date" />
+              </div>
+              <small class="error" id="dateErr"></small>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Reason for visit or any notes"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Send Request</button>
+          <p id="appt-status" class="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>WellSpring Family Clinic</h4>
+        <p>Community-first healthcare with compassionate clinicians.</p>
+        <p class="small">© <span id="year"></span> WellSpring Family Clinic. All rights reserved.</p>
+      </div>
+      <div>
+        <h5>Hours</h5>
+        <ul class="plain"><li>Mon–Fri: 8:00 – 18:00</li><li>Sat: 9:00 – 14:00</li><li>Sun/Public Holidays: Closed</li></ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul class="plain">
+          <li>Phone: <a href="tel:+61123456789">+61 123 456 789</a></li>
+          <li>Email: <a href="mailto:hello@wellspringclinic.example">hello@wellspringclinic.example</a></li>
+          <li>Address: 123 Meadow Rd, Greenfield</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

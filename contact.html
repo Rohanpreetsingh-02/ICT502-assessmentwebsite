@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Contact — WellSpring Family Clinic</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body data-page="contact">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><span class="logo-icon">💧</span><span class="logo-text">WellSpring <small>Family Clinic</small></span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" data-nav="home">Home</a></li>
+          <li><a href="services.html" data-nav="services">Services</a></li>
+          <li><a href="bmi.html" data-nav="bmi">BMI Calculator</a></li>
+          <li><a href="appointment.html" data-nav="appointment">Appointment</a></li>
+          <li><a href="about.html" data-nav="about">About Us</a></li>
+          <li><a href="contact.html" data-nav="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero reveal">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p>We’re here to help. Call, email, or send a message using the form below.</p>
+      </div>
+    </section>
+
+    <section class="container reveal">
+      <div class="contact-grid">
+        <div class="map-card">
+          <iframe title="Clinic map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509371!2d144.9537363153169!3d-37.81627977975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDQ5JzAzLjYiUyAxNDTCsDU3JzI0LjQiRQ!5e0!3m2!1sen!2sau!4v1675588888888" allowfullscreen>
+          </iframe>
+        </div>
+        <div class="form-card">
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="cname">Full Name</label>
+              <input type="text" id="cname" name="name" required placeholder="Your full name" />
+              <small class="error" id="cnameErr"></small>
+            </div>
+            <div class="form-group">
+              <label for="cemail">Email</label>
+              <input type="email" id="cemail" name="email" required placeholder="you@example.com" />
+              <small class="error" id="cemailErr"></small>
+            </div>
+            <div class="form-group">
+              <label for="cmessage">Message</label>
+              <textarea id="cmessage" name="message" rows="6" required placeholder="How can we help?"></textarea>
+              <small class="error" id="cmessageErr"></small>
+            </div>
+            <button class="btn btn-primary" type="submit">Send Message</button>
+            <p id="contact-status" class="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>WellSpring Family Clinic</h4>
+        <p>Community-first healthcare with compassionate clinicians.</p>
+        <p class="small">© <span id="year"></span> WellSpring Family Clinic. All rights reserved.</p>
+      </div>
+      <div>
+        <h5>Hours</h5>
+        <ul class="plain"><li>Mon–Fri: 8:00 – 18:00</li><li>Sat: 9:00 – 14:00</li><li>Sun/Public Holidays: Closed</li></ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul class="plain">
+          <li>Phone: <a href="tel:+61123456789">+61 123 456 789</a></li>
+          <li>Email: <a href="mailto:hello@wellspringclinic.example">hello@wellspringclinic.example</a></li>
+          <li>Address: 123 Meadow Rd, Greenfield</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
